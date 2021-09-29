@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+.mainContent {
+    overflow-x: hidden;
+    // position: relative;
+
+    &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    // background-image: url("./../media/cinema.jpg");
+    background-color: #082032;
+
+//     background: #0f0c29;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    filter: blur(4px);
+    }
+
+
+    .insideMainContent {
+        position: relative;
+        * {
+            // color: #fff;
+            font-family: 'Montserrat', sans-serif;
+          
+            text-decoration: none;
+            // font-size: 2rem;
+        }
+
+        .movieDisplayer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      
+        }
+
+
+
+        .singleMovie{
+        
+            margin: 0 .6rem;
+            position: relative;
+            width: 270px;
+            max-height: 500px;
+            min-height: 450px;
+            transition: ease .5s;
+            margin: .5rem;
+            background-color: #334756;
+            border-radius: 15px;
+            color: #fff;
+            border: none;
+            .rating {
+                position: absolute;
+                color: black;               
+                font-weight: 800;
+                width: 40px;
+                height: 20px;
+                background-color: rgba(255, 255, 0, 0.795);
+                margin: 10px 0 0 10px;
+                
+            }
+            img{
+                max-height: 350px;
+                min-height: 350px;
+                min-width: 270px;
+                max-width: 270px;
+                border-radius: 15px 15px 0 0 ;
+            }
+        }
+
+        
+
+    }
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nameSearch {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+}
+.searchParams {
+    display:  block;
+
+    label {
+        margin: 0 10px 5px 0;
+        font-size: 1.2em;
+    }
+
+
+}
+
+form .searchBtn{
+
+    border-radius: 3px;
+    padding: 3px 30px;
+    margin: 5px 5px;
+    border: 1px solid;
+    &:hover{
+        background-color: rgb(73, 149, 255);
+        color: #fff;
+        border: 1px solid;
+    }
+}
+
+.radioInp label{
+    margin: 5px 20px 5px 3px;
+}
+
+.formContainer{
+    background-color: rgba(255, 255, 255, 0.486);
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+// Pagination style
+
+
+.pagination{
+    justify-content: center;
+    
+    .next{
+        width: auto;
+    }
+
+    .prev{
+        width: auto;
+     
+    }
+    button{
+    background-color:rgba(255, 255, 255, 0.407);
+    border-radius:30px;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+
+}
+}
+
+
+
+button.currentPage{
+    background-color: #fff;
+    font-weight:700;
+}
+
+.bi-sliders {
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.filterBtn{
+    padding-top: 0;
+}
+
+.filterInput{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    margin: 10px 5px;
+}
+
+.filterSelector{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 150px;
+    margin: 10px 5px;
+    padding-left:27.5px;
+}
